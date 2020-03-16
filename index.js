@@ -18,6 +18,7 @@ app.delete('/deletarProduto/:id', codificacao, produtosController.deletarProduto
 app.get('/editaProduto/:id', codificacao, produtosController.editaProduto)
 app.put('/atualizarProduto', codificacao, produtosController.atualizarProduto)
 
-app.listen(80, function() {
+var porta = process.env.PORT || 8080
+app.listen(porta, function() {
     console.log('app rodando!')
 })
