@@ -1,2 +1,2 @@
 npm install
-nodemo index.js
+npm start
