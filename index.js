@@ -18,6 +18,6 @@ app.delete('/deletarProduto/:id', codificacao, produtosController.deletarProduto
 app.get('/editaProduto/:id', codificacao, produtosController.editaProduto)
 app.put('/atualizarProduto', codificacao, produtosController.atualizarProduto)
 
-app.listen(8080, function() {
+app.listen(80, function() {
     console.log('app rodando!')
 })
