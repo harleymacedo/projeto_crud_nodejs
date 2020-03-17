@@ -4,6 +4,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const produtosController = require('./controllers/produtosController')
 
+app.use(express.static(__dirname + '/public'))
 app.use(methodOverride('_method', {methods: ['GET', 'PUT', 'POST']}))
 app.use(methodOverride('X-HTTP-Method-Override'))
 app.use(bodyParser.urlencoded({extended: false}))
