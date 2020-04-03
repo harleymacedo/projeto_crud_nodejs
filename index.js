@@ -18,6 +18,7 @@ app.post('/adicionarProduto', codificacao, produtosController.adicionarProduto) 
 app.delete('/deletarProduto/:id', codificacao, produtosController.deletarProduto) //ok
 app.get('/editaProduto/:id', codificacao, produtosController.editaProduto)
 app.put('/atualizarProduto', codificacao, produtosController.atualizarProduto)
+app.get('/api', (req, res) => res.send({nome: 'Harley', estado: 'CE'}))
 
 var porta = process.env.PORT || 3000
 app.listen(porta)
